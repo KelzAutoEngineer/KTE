@@ -1,0 +1,77 @@
+{% extends 'Construction/base.html' %}
+{% load static %}
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+   <div id="banner-area" class="banner-area" style="background-image:url({% static 'kte/images/banner/banner2.jpg' %})">
+      <div class="banner-text">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+                  <div class="banner-heading">
+                     <h1 class="banner-title">Projects</h1>
+                     <ol class="breadcrumb">
+                        <li>Home</li>
+                        <li>Projects</li>
+                     </ol>
+                  </div>
+               </div><!-- Col end -->
+            </div><!-- Row end -->
+         </div><!-- Container end -->
+      </div><!-- Banner text end -->
+   </div><!-- Banner area end --> 
+
+
+   <section id="main-container" class="main-container">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="isotope-nav" data-isotope-nav="isotope">
+                  <ul>
+                     <li><a href="#" class="active" data-filter="*">Show All</a></li>
+                     <li><a href="#" data-filter=".commercial">Commercial</a></li>
+                     <li><a href="#" data-filter=".healthcare">Private Dwellings</a></li>
+                  </ul>
+               </div><!-- Isotope filter end -->
+            </div><!-- Filter col end -->
+         </div><!-- Filter row end -->
+
+         <div id="isotope" class="isotope">
+               <div class="col-md-4 col-sm-6 col-xs-12 commercial isotope-item">
+                  <div class="isotope-img-container">
+                     <a class="gallery-popup" href="{% static 'kte/images/projects/project1.jpg' %}">
+                        <img class="img-responsive" src="{% static 'kte/images/projects/project1.jpg' %}" alt="">
+                        <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                     </a>
+                     <div class="project-item-info">
+                        <div class="project-item-info-content">
+                           <h3 class="project-item-title">
+                           <a href="gallery">Commercial Projects</a>
+                           </h3>
+                           <p class="project-cat">Gallery</p>
+                        </div>
+                     </div>
+                  </div>
+               </div><!-- Isotope item 1 end -->
+
+               <div class="col-md-4 col-sm-6 col-xs-12 healthcare isotope-item">
+                  <div class="isotope-img-container">
+                     <a class="gallery-popup" href="{% static 'kte/images/projects/project3.jpg' %}">
+                        <img class="img-responsive" src="{% static 'kte/images/projects/project3.jpg' %}" alt="">
+                        <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                     </a>
+                     <div class="project-item-info">
+                        <div class="project-item-info-content">
+                           <h3 class="project-item-title">
+                           <a href="gallery2">Private Dwellings</a>
+                           </h3>
+                           <p class="project-cat">Gallery</p>
+                        </div>
+                     </div>
+                  </div>
+               </div><!-- Isotope item 2 end -->
+            </div><!-- Isotop end -->
+
+      </div><!-- Conatiner end -->
+   </section><!-- Main container end -->
+{% endblock %}

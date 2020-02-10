@@ -1,0 +1,290 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>{% block title %}Home{% endblock %}</title>
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+	<!-- CSS
+	================================================== -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/custom.css' %}">
+	<!-- Template styles-->
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/style.css' %}">
+	<!-- Responsive styles-->
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/responsive.css' %}">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/font-awesome.min.css' %}">
+	<!-- Animation -->
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/animate.css' %}">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/owl.theme.default.min.css' %}">
+	<!-- Colorbox -->
+	<link rel="stylesheet" type="text/css" href="{% static 'kte/css/colorbox.css' %}">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+      <script src="{% static 'kte/js/html5shiv.js' %}"></script>
+      <script src="{% static '/kte/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+		<!-- Header start -->
+		<header id="header" class="header-one">
+			<div class="container">
+				<div class="row">
+					<div class="logo-area clearfix">
+						<div class="logo col-xs-12 col-md-3">
+							<a href="{% url 'index' %}">
+								<img src="{% static 'kte/images/MC LOGO.png' %}" alt="">
+							</a>
+						</div>
+						<!-- logo end -->
+						<div class="col-xs-12 col-md-9 header-right">
+							<ul class="top-info-box">
+								<li>
+									<div class="info-box">
+										<div class="info-box-content">
+											<p class="info-box-title">Call Us</p>
+											<p class="info-box-subtitle">(012)805 3242 / (+27)73 931 5177</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="info-box">
+										<div class="info-box-content">
+											<p class="info-box-title">Email Us</p>
+											<p class="info-box-subtitle">rithas@vodamail.co.za</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="info-box">
+										<div class="info-box-content">
+											<p class="info-box-title">CIDB Grading</p>
+											<p class="info-box-subtitle">6GB PE & 2CEPE</p>
+										</div>
+									</div>
+								</li>
+								<li class="info-box">
+									<div class="info-box">
+										<div class="info-box-content">
+											<p class="info-box-title">NHBRC</p>
+											<p class="info-box-subtitle">26876</p>
+										</div>
+									</div>
+								</li>
+								<li class="last">
+									<div class="info-box last">
+										<div class="info-box-content">
+											<p class="info-box-title">BEE</p>
+											<p class="info-box-subtitle">Level 1</p>
+										</div>
+									</div>
+								</li>
+							</ul><!-- Ul end -->
+						</div><!-- header right end -->
+					</div><!-- logo area end -->
+
+				</div><!-- Row end -->
+			</div><!-- Container end -->
+
+		<nav class="site-navigation navigation navdown">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="site-nav-inner pull-left">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+								<div class="collapse navbar-collapse navbar-responsive-collapse">
+									<ul class="nav navbar-nav">
+
+										<li><a href="{% url 'index' %}">Home</a></li>
+
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <i
+													class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="{% url 'about' %}">About Us</a></li>
+												<li><a href="{% url 'testimonials' %}">Testimonials</a></li>
+												<li><a href="{% url 'faq' %}">Faq</a></li>
+											</ul>
+										</li>
+
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <i
+													class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="{% url 'projects' %}">Commercial Projects</a></li>
+												<li><a href="{% url 'projects' %}">Private Dwellings</a></li>
+											</ul>
+										</li>
+
+										<li><a href="{% url 'services' %}">Services</a></li>
+
+										<li><a href="{% url 'contact' %}">Contact Us</a></li>
+
+													<li>
+													<a title="Facebook" href="https://www.facebook.com/keletso.maimane">
+														<span class="social-icon"><i class="fa fa-facebook"></i></span>
+													</a>
+													</li>
+
+													<li>
+													<a title="Twitter" href="https://twitter.com/">
+														<span class="social-icon"><i class="fa fa-twitter"></i></span>
+													</a>
+													</li>
+
+													<li>
+													<a title="Instagram" href="https://instagram.com/">
+														<span class="social-icon"><i class="fa fa-instagram"></i></span>
+													</a>
+													</li>
+
+									</ul>
+									<!--/ Nav ul end -->
+								</div>
+								<!--/ Collapse end -->
+
+							</div><!-- Site Navbar inner end -->
+
+						</div>
+						<!--/ Col end -->
+					</div>
+					<!--/ Row end -->
+				</div>
+				<!--/ Container end -->
+
+			</nav>
+			<!--/ Navigation end -->
+		</header>
+		<!--/ Header end -->
+		{% block content %}
+
+		{% endblock %}
+		<footer id="footer" class="footer bg-overlay">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-12 footer-widget footer-about">
+							<h3 class="widget-title">About Us</h3>
+							<img class="footer-logo" src="{% static 'kte/images/logo(small).png' %}" alt="" />
+							<p>Mororithas Construction is an eccentric and generically customer orientated construction and engineering service provider.
+								The company provides a comprehensive portfolio of skills and services which range in versatility from the building and civil engineering
+								industries to the construction industry as a whole, in South Africa.</p>
+							<div class="footer-social">
+								<ul>
+									<li><a href="https://facebook.com/keletso.maimane"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div><!-- Footer social end -->
+						</div><!-- Col end -->
+
+						<div class="col-md-4 col-sm-12 footer-widget">
+							<h3 class="widget-title">Working Hours</h3>
+							<div class="working-hours">
+								We work 5 days a week, every day excluding major holidays. Contact us if you have an emergency, with our
+								Hotline and Contact form.
+								<br><br> Monday - Friday: <span class="text"> 08:00 - 16:00 </span>
+							</div>
+						</div><!-- Col end -->
+
+						<div class="col-md-4 col-sm-12 footer-widget">
+							<h3 class="widget-title">Services</h3>
+							<ul class="list-arrow">
+								<li><a href="{% url 'services' %}">Building Construction</a></li>
+								<li><a href="{% url 'services' %}">Water Services</a></li>
+								<li><a href="{% url 'services' %}">Construction of Fencing</a></li>
+								<li><a href="{% url 'services' %}">Construction of Roads</a></li>
+								<li><a href="{% url 'services' %}">Supply services</a></li>
+							</ul>
+						</div><!-- Col end -->
+
+
+					</div><!-- Row end -->
+				</div><!-- Container end -->
+			</div><!-- Footer main end -->
+
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div class="copyright-info">
+								<span>Powered by <a>Keletso Maimane</a></span>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="footer-menu">
+								<ul class="nav unstyled">
+									<li><a href="{% url 'about' %}">About</a></li>
+									<li><a href="{% url 'about' %}">Our people</a></li>
+									<li><a href="{% url 'faq' %}">Faq</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- Row end -->
+
+					<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+						<button class="btn btn-primary" title="Back to Top">
+							<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+						</button>
+					</div>
+
+				</div><!-- Container end -->
+			</div><!-- Copyright end -->
+
+		</footer><!-- Footer end -->
+
+
+		<!-- Javascript Files
+	================================================== -->
+
+		<!-- initialize jQuery Library -->
+		<script type="text/javascript" src="{% static 'kte/js/jquery.js' %}"></script>
+		<!-- Bootstrap jQuery -->
+		<script type="text/javascript" src="{% static 'kte/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel -->
+		<script type="text/javascript" src="{% static 'kte/js/owl.carousel.min.js' %}"></script>
+		<!-- Color box -->
+		<script type="text/javascript" src="{% static 'kte/js/jquery.colorbox.js' %}"></script>
+		<!-- Isotope -->
+		<script type="text/javascript" src="{% static 'kte/js/isotope.js' %}"></script>
+		<script type="text/javascript" src="{% static 'kte/js/ini.isotope.js' %}"></script>
+
+
+    <!-- Google Map API Key-->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+		<!-- Google Map Plugin-->
+		<script type="text/javascript" src="{% static 'kte/js/gmap3.js' %}"></script>
+
+	 <!-- Template custom -->
+	 <script type="text/javascript" src="{% static 'kte/js/custom.js' %}"></script>
+
+	</div><!-- Body inner end -->
+</body>
+
+</html>
