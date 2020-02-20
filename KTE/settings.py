@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'Construction.apps.ConstructionConfig',
+    'django_user_agents',
+    'tracking_analyzer',
     'tracking',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -50,6 +52,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'KTE.urls'
